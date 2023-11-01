@@ -9,7 +9,7 @@ services:
     ports:
       - "3307:3306"
     volumes:
-      - mysql_data:/var/lib/mysql
+      - db:/var/lib/mysql
 
   achat-backend:
     image: amalennj/achat:1-0
@@ -21,4 +21,4 @@ services:
 
 
 volumes:
-  mysql_data:
+  db:
