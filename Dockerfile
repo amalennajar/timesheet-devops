@@ -1,7 +1,7 @@
 # Use a base image with Java installed
 FROM openjdk:11-jre-slim
 
-EXPOSE 8082
+EXPOSE 8089
 
 # Set the working directory in the container
 WORKDIR /app
