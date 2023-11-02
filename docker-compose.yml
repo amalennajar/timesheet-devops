@@ -4,13 +4,12 @@ services:
   mysqldb:
     image: mysql:5.7
     restart: unless-stopped
-    environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      MYSQL_DATABASE: achatdb
     ports:
-      - "3307:3306"
+      -  3307:3306
     volumes:
       - db:/var/lib/mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
   achat-backend:
     image: amalennj/achat:1-0
     restart: unless-stopped
