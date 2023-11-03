@@ -11,15 +11,16 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_DATABASE: achatdb
-
-  achat-backend:
+    networks:
+      - mynetwork
     image: amalennj/achat:1-0
     restart: unless-stopped
     ports:
       - 8082:8082
     depends_on:
       - mysqldb
-
+    networks:
+      - mynetwork
 volumes:
   db:
 
