@@ -27,6 +27,8 @@ services:
       - mysqldb
     networks:
       - mynetwork
+    links:
+      - mysqldb:mysqldb
 
 volumes:
   db:
