@@ -11,8 +11,8 @@ services:
     volumes:
       - db:/var/lib/mysql
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_DATABASE: achatdb
+      MYSQL_ROOT_PASSWORD: root
     networks:
       - mynetwork
   achat-backend:
