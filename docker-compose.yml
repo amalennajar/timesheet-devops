@@ -13,6 +13,7 @@ services:
       MYSQL_DATABASE: achatdb
     networks:
       - mynetwork
+  achat-backend:
     image: amalennj/achat:1-0
     restart: unless-stopped
     ports:
