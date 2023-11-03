@@ -25,6 +25,8 @@ services:
       - "8082:8082"
     depends_on:
       - mysqldb
+    entrypoint: [ "./wait-for-it.sh", "mysqldb:3306", "--", "java", "-jar", "achat-1.0.jar" ]
+
     networks:
       - mynetwork
 
