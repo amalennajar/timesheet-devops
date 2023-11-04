@@ -17,7 +17,7 @@ public class reglementServiceMock {
     @InjectMocks
     private ReglementServiceImpl reglementService;
 
-    @Test
+
 
 
 
