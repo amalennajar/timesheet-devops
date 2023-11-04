@@ -15,7 +15,7 @@ services:
       - db_data:/var/lib/mysql
   # spring app
   backend:
-    image: amalennj/achat:1-0
+    image: amalennj/achat:1-1
     restart: unless-stopped
     ports:
       - "8082:8082"
