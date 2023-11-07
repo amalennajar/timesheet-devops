@@ -30,7 +30,7 @@ services:
     image: amalennj/achatfront
     restart: unless-stopped
     ports:
-      - "82:82"
+      - "80:80"
     depends_on:
       - backend
 volumes:
