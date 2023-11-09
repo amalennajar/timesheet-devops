@@ -109,6 +109,8 @@ pipeline {
         }
         failure {
             slackSend color: "good", message: "${BUILD_TAG} Build failed"
+            //commit test webhook
+
         }
     }
 }
