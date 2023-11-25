@@ -70,7 +70,7 @@ git clone https://github.com/amalennajar/CI-CD-Project-devops.git
 ### 2. Create a Jenkins job and configure it to use this pipeline script.
 
 ```
-####  Set up Jenkins credentials for secure information.
+Set up Jenkins credentials for secure information.
 ```
 - ##### DockerHub Credentials
 > Add your DockerHub Credentials `(Username and Password)` and save the id with this value `docker-hub`.
@@ -85,42 +85,42 @@ git clone https://github.com/amalennajar/CI-CD-Project-devops.git
 
 Automate your continuous integration and deployment process with this Jenkins pipeline for the project. The pipeline includes distinct stages, each contributing to a specific aspect of the software development lifecycle.
 
-## Pipeline Stages
+#### Pipeline Stages
 
-#### 1. Git Checkout
+##### 1. Git Checkout
    - Fetches the latest code from the main branch of the Git repository.
 
-#### 2. MVN Clean
+##### 2. MVN Clean
    - Cleans the project by removing previously generated build files using the Maven command `mvn clean`.
 
-#### 3. MVN Compile
+##### 3. MVN Compile
    - Compiles the project source code using the Maven command `mvn compile`.
 
-#### 4. Mockito Tests
+##### 4. Mockito Tests
    - Executes Mockito tests using the Maven command `mvn test -Dtest=*Mock`.
 
-#### 5. Run Jacoco Test Coverage
+##### 5. Run Jacoco Test Coverage
    - Prepares and generates a code coverage report using Jacoco with the commands `mvn jacoco:prepare-agent test jacoco:report`. JUnit test reports are also collected.
 
-#### 6. Run SonarQube Analysis
+##### 6. Run SonarQube Analysis
    - Performs static code analysis using SonarQube with the command `mvn sonar:sonar`. SonarQube credentials are securely provided.
 
-#### 7. Nexus Deployment
+##### 7. Nexus Deployment
    - Deploys the project to a Nexus repository using the Maven command `mvn deploy -DskipTests`.
 
-#### 8. Docker Build Image
+##### 8. Docker Build Image
    - Builds a Docker image using the command `docker build`. The image is tagged as `amalennj/achat:1-1` with the database password set to "root".
 
-#### 9. Docker Push Image
+##### 9. Docker Push Image
    - Pushes the Docker image to Docker Hub using the command `docker push`. Docker Hub credentials are securely provided.
 
-#### 10. Docker Compose Up
+##### 10. Docker Compose Up
    - Launches Docker containers defined in the `docker-compose.yml` file using the command `docker-compose up -d`.
 
-#### 11. Mailing
+##### 11. Mailing
    - Sends email notifications upon build success or failure. Slack notifications are also included.
 
-#### Post-Build Actions
+##### Post-Build Actions
 
 - **Success:**
   - Sends a success message to a Slack channel with the build tag.
