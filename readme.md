@@ -70,15 +70,15 @@ git clone https://github.com/amalennajar/CI-CD-Project-devops.git
 ### 2. Create a Jenkins job and configure it to use this pipeline script.
 
 ```
-### 3. Set up Jenkins credentials for secure information.
+####  Set up Jenkins credentials for secure information.
 ```
-- #### DockerHub Credentials
+- ##### DockerHub Credentials
 > Add your DockerHub Credentials `(Username and Password)` and save the id with this value `docker-hub`.
-- #### SonarQube Credentials
+- ##### SonarQube Credentials
 > Add your SonarQube Credentials `(Username and Password)` and save the id with this value `SONAR_USER` and SONAR_PASSWORD.
 
 
-### 4. Build CI/CD Pipeline using Jenkins
+### 3. Build CI/CD Pipeline using Jenkins
 
 
 ![](https://github.com/amalennajar/CI-CD-Project-devops/blob/main/Screenshot/pipeline.png)
