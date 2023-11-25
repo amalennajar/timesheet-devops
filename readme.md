@@ -131,5 +131,5 @@ Automate your continuous integration and deployment process with this Jenkins pi
 
 ![](https://github.com/amalennajar/CI-CD-Project-devops/blob/main/Screenshot/containers_list.png)
 
-### 6. monitoring the application with prometheus and grafana
+### 6. Monitoring the application with Prometheus and Grafana
 - The detail in this link : https://amalennajar.hashnode.dev/monitoring-your-spring-boot-app-with-prometheus-and-grafana-a-step-by-step-guide
