@@ -47,7 +47,7 @@ SpringBoot-angular web application on Docker-compose using CI/CD Jenkins Pipelin
 ## Project Demo:
 
 https://github.com/amalnajar/jenkinss/assets/121998727/b585d097-d2f7-411c-a881-25b1e4aa94c1.mp4
-
+https://github-production-user-asset-6210df.s3.amazonaws.com/121998727/285603199-b585d097-d2f7-411c-a881-25b1e4aa94c1.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231125%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231125T163234Z&X-Amz-Expires=300&X-Amz-Signature=870b67213a3cd81026aa84986284a7031b6608764f4b1b96876bf33298bf1d0d&X-Amz-SignedHeaders=host&actor_id=121998727&key_id=0&repo_id=701031124
 
 
 ## Tools:
